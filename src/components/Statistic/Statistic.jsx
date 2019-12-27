@@ -1,10 +1,15 @@
 import React from 'react';
 import T from 'prop-types';
+import styles from './Statistic.module.css';
 
 const Statistic = ({ label, value }) => (
-  <p>
+  <p className={styles.text}>
     {label}
-    <span>{value}</span>
+    {label !== 'PositivePercentage:' ? (
+      <span className={styles.textValue}>{value}</span>
+    ) : (
+      <span className={styles.textValue}>{value}&#37;</span>
+    )}
   </p>
 );
 

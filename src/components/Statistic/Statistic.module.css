@@ -1,0 +1,11 @@
+.text {
+  margin-bottom: 10px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.textValue {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+}
